@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Miniassig</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <h1>ALA PE CAUSA</h1>
+  </head>
+
+
+  <body>
+  <nav>
+    <ul>
+      <li><a href="/actors">actors</a></li>
+      <li><a href="/alquilers">alquilers</a></li>
+      <li><a href="/casetes">casetes</a></li>
+      <li><a href="/miembros">miembros</a></li>
+      <li><a href="/peliculas">peliculas</a></li>
+      <li><a href="/repartos">repartos</a></li>
+
+    </ul>
+  </nav>
+    <%= yield %>
+  </body>
+</html>
